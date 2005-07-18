@@ -1,4 +1,5 @@
 Summary:	obby library
+Summary(pl):	Biblioteka obby
 Name:		obby
 Version:	0.1.0
 Release:	1
@@ -6,7 +7,7 @@ License:	BSD
 Group:		Libraries
 Source0:	http://releases.0x539.de/obby/%{name}-%{version}.tar.gz
 # Source0-md5:	3ba8800ac9cd731915c7452ab905a72a
-Patch0:	%{name}-assert.patch
+Patch0:		%{name}-assert.patch
 URL:		http://gobby.0x539.de/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
