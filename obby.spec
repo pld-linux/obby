@@ -14,18 +14,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 obby library.
 
+%description -l pl
+Biblioteka obby
+
 %package devel
-Summary:	Header files and develpment documentation for obby
-Summary(pl):	Pliki nag³ówkowe i dokumetacja do obby
+Summary:	Header files for obby
+Summary(pl):	Pliki nag³ówkowe biblioteki obby
 Summary(pt_BR):	Arquivos do pacote obby para desenvolvimento
 Group:		Development/Libraries
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
-Header files and develpment documentation for obby.
+Header files for obby.
 
 %description devel -l pl
-Pliki nag³ówkowe i dokumentacja do obby.
+Pliki nag³ówkowe biblioteki obby.
 
 %description devel -l pt_BR
 Arquivos de cabeçalho e bibliotecas usadas no desenvolvimento de
@@ -36,7 +39,7 @@ Summary:	Static obby library
 Summary(pl):	Biblioteka statyczna obby
 Summary(pt_BR):	Arquivos do pacote obby para desenvolvimento estático
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{epoch}:%{version}-%{release}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static obby library.
