@@ -1,13 +1,15 @@
 Summary:	obby library
 Summary(pl):	Biblioteka obby
 Name:		obby
-Version:	0.1.0
+Version:	0.2.0
 Release:	1
 License:	BSD
 Group:		Libraries
 Source0:	http://releases.0x539.de/obby/%{name}-%{version}.tar.gz
-# Source0-md5:	3ba8800ac9cd731915c7452ab905a72a
+# Source0-md5:	6bd46f9b8c7652d7bfa8413ed2c2af4b
 Patch0:		%{name}-assert.patch
+BuildRequires: gmp-c++-devel
+BuildRequires: net6-devel >= 1.1.0
 URL:		http://gobby.0x539.de/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -53,7 +55,6 @@ aplicativos estáticos que usam obby.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %configure
