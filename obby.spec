@@ -7,10 +7,10 @@ License:	BSD
 Group:		Libraries
 Source0:	http://releases.0x539.de/obby/%{name}-%{version}.tar.gz
 # Source0-md5:	6bd46f9b8c7652d7bfa8413ed2c2af4b
-BuildRequires: gmp-c++-devel
-BuildRequires: howl-devel
-BuildRequires: net6-devel >= 1.1.0
-URL:		http://gobby.0x539.de/
+URL:		http://gobby.0x539.de/            
+BuildRequires:	gmp-c++-devel
+BuildRequires:	howl-devel
+BuildRequires:	net6-devel >= 1.1.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
