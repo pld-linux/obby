@@ -1,16 +1,21 @@
+%define		_rc rc1
 Summary:	obby library
 Summary(pl):	Biblioteka obby
 Name:		obby
-Version:	0.2.0
-Release:	1
+Version:	0.3.0
+Release:	0.%{_rc}.1
 License:	BSD
 Group:		Libraries
-Source0:	http://releases.0x539.de/obby/%{name}-%{version}.tar.gz
-# Source0-md5:	6bd46f9b8c7652d7bfa8413ed2c2af4b
-URL:		http://gobby.0x539.de/            
+Source0:	http://releases.0x539.de/obby/%{name}-%{version}%{_rc}.tar.gz
+# Source0-md5:	c42599423aa8cc1ff5cd374806984edf
+URL:		http://gobby.0x539.de/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gmp-c++-devel
 BuildRequires:	howl-devel
-BuildRequires:	net6-devel >= 1.1.0
+BuildRequires:	libtool
+BuildRequires:	net6-devel >= 1.2.0
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -54,10 +59,15 @@ Arquivos de cabeçalho e bibliotecas usadas no desenvolvimento de
 aplicativos estáticos que usam obby.
 
 %prep
-%setup -q
+%setup -qn %{name}-%{version}%{_rc}
 
 %build
-%configure --with-howl
+%{__libtoolize}
+%{__aclocal} -I m4
+%{__automake}
+%{__autoconf}
+%configure \
+    --with-howl
 %{__make}
 
 %install
