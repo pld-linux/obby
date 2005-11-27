@@ -30,6 +30,9 @@ Summary(pl):	Pliki nag³ówkowe biblioteki obby
 Summary(pt_BR):	Arquivos do pacote obby para desenvolvimento
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	gmp-c++-devel
+Requires:	howl-devel
+Requires:	net6-devel >= 1.2.1
 
 %description devel
 Header files for obby.
