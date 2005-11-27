@@ -1,4 +1,4 @@
-%define		_rc rc1
+%define		_rc rc3
 Summary:	obby library
 Summary(pl):	Biblioteka obby
 Name:		obby
@@ -7,14 +7,14 @@ Release:	0.%{_rc}.1
 License:	BSD
 Group:		Libraries
 Source0:	http://releases.0x539.de/obby/%{name}-%{version}%{_rc}.tar.gz
-# Source0-md5:	c42599423aa8cc1ff5cd374806984edf
+# Source0-md5:	7f6eae742cd20ceb239604bd2415a09a
 URL:		http://gobby.0x539.de/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gmp-c++-devel
 BuildRequires:	howl-devel
 BuildRequires:	libtool
-BuildRequires:	net6-devel >= 1.2.0
+BuildRequires:	net6-devel >= 1.2.1
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -77,13 +77,15 @@ install -d $RPM_BUILD_ROOT{%{_examplesdir}/%{name}-%{version},%{_mandir}/man3}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %post   -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
