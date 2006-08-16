@@ -1,13 +1,12 @@
-%define		_rc rc3
 Summary:	obby library
 Summary(pl):	Biblioteka obby
 Name:		obby
 Version:	0.3.0
-Release:	0.%{_rc}.1
+Release:	1
 License:	BSD
 Group:		Libraries
-Source0:	http://releases.0x539.de/obby/%{name}-%{version}%{_rc}.tar.gz
-# Source0-md5:	7f6eae742cd20ceb239604bd2415a09a
+Source0:	http://releases.0x539.de/obby/%{name}-%{version}.tar.gz
+# Source0-md5:	b14135018a3093395296cf091f9f824f
 URL:		http://gobby.0x539.de/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -62,7 +61,7 @@ Arquivos de cabeçalho e bibliotecas usadas no desenvolvimento de
 aplicativos estáticos que usam obby.
 
 %prep
-%setup -qn %{name}-%{version}%{_rc}
+%setup -q
 
 %build
 %{__libtoolize}
