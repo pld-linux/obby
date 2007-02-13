@@ -1,5 +1,5 @@
 Summary:	obby library
-Summary(pl.UTF-8):   Biblioteka obby
+Summary(pl.UTF-8):	Biblioteka obby
 Name:		obby
 Version:	0.3.0
 Release:	1
@@ -25,8 +25,8 @@ Biblioteka obby
 
 %package devel
 Summary:	Header files for obby
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki obby
-Summary(pt_BR.UTF-8):   Arquivos do pacote obby para desenvolvimento
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki obby
+Summary(pt_BR.UTF-8):	Arquivos do pacote obby para desenvolvimento
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gmp-c++-devel
@@ -45,8 +45,8 @@ aplicativos que usam obby.
 
 %package static
 Summary:	Static obby library
-Summary(pl.UTF-8):   Biblioteka statyczna obby
-Summary(pt_BR.UTF-8):   Arquivos do pacote obby para desenvolvimento estático
+Summary(pl.UTF-8):	Biblioteka statyczna obby
+Summary(pt_BR.UTF-8):	Arquivos do pacote obby para desenvolvimento estático
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
