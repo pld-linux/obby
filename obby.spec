@@ -1,5 +1,5 @@
 Summary:	obby library
-Summary(pl.UTF-8):	Biblioteka obby
+Summary(pl):	Biblioteka obby
 Name:		obby
 Version:	0.3.0
 Release:	1
@@ -20,13 +20,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 obby library.
 
-%description -l pl.UTF-8
+%description -l pl
 Biblioteka obby
 
 %package devel
 Summary:	Header files for obby
-Summary(pl.UTF-8):	Pliki nagÅ‚Ã³wkowe biblioteki obby
-Summary(pt_BR.UTF-8):	Arquivos do pacote obby para desenvolvimento
+Summary(pl):	Pliki nag³ówkowe biblioteki obby
+Summary(pt_BR):	Arquivos do pacote obby para desenvolvimento
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gmp-c++-devel
@@ -36,29 +36,29 @@ Requires:	net6-devel >= 1.2.1
 %description devel
 Header files for obby.
 
-%description devel -l pl.UTF-8
-Pliki nagÅ‚Ã³wkowe biblioteki obby.
+%description devel -l pl
+Pliki nag³ówkowe biblioteki obby.
 
-%description devel -l pt_BR.UTF-8
-Arquivos de cabeÃ§alho e bibliotecas usadas no desenvolvimento de
+%description devel -l pt_BR
+Arquivos de cabeçalho e bibliotecas usadas no desenvolvimento de
 aplicativos que usam obby.
 
 %package static
 Summary:	Static obby library
-Summary(pl.UTF-8):	Biblioteka statyczna obby
-Summary(pt_BR.UTF-8):	Arquivos do pacote obby para desenvolvimento estÃ¡tico
+Summary(pl):	Biblioteka statyczna obby
+Summary(pt_BR):	Arquivos do pacote obby para desenvolvimento estático
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static obby library.
 
-%description static -l pl.UTF-8
+%description static -l pl
 Biblioteka statyczna obby.
 
-%description static -l pt_BR.UTF-8
-Arquivos de cabeÃ§alho e bibliotecas usadas no desenvolvimento de
-aplicativos estÃ¡ticos que usam obby.
+%description static -l pt_BR
+Arquivos de cabeçalho e bibliotecas usadas no desenvolvimento de
+aplicativos estáticos que usam obby.
 
 %prep
 %setup -q
