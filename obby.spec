@@ -1,19 +1,19 @@
 Summary:	obby library
 Summary(pl.UTF-8):	Biblioteka obby
 Name:		obby
-Version:	0.3.0
+Version:	0.4.4
 Release:	1
 License:	BSD
 Group:		Libraries
 Source0:	http://releases.0x539.de/obby/%{name}-%{version}.tar.gz
-# Source0-md5:	b14135018a3093395296cf091f9f824f
+# Source0-md5:	a5a7032bca90f8bb18c433f1ce6be911
 URL:		http://gobby.0x539.de/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	avahi-devel
 BuildRequires:	gmp-c++-devel
-BuildRequires:	howl-devel
 BuildRequires:	libtool
-BuildRequires:	net6-devel >= 1.2.1
+BuildRequires:	net6-devel >= 1.3.0
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,8 +29,8 @@ Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki obby
 Summary(pt_BR.UTF-8):	Arquivos do pacote obby para desenvolvimento
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	avahi-devel
 Requires:	gmp-c++-devel
-Requires:	howl-devel
 Requires:	net6-devel >= 1.2.1
 
 %description devel
