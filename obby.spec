@@ -1,12 +1,12 @@
 Summary:	obby library
 Summary(pl.UTF-8):	Biblioteka obby
 Name:		obby
-Version:	0.4.4
+Version:	0.4.5
 Release:	1
 License:	BSD
 Group:		Libraries
 Source0:	http://releases.0x539.de/obby/%{name}-%{version}.tar.gz
-# Source0-md5:	a5a7032bca90f8bb18c433f1ce6be911
+# Source0-md5:	bc1e0d2bf7115fe53a54cb4d2d0776b7
 URL:		http://gobby.0x539.de/
 BuildRequires:	autoconf
 BuildRequires:	automake
