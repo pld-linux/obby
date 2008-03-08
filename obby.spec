@@ -1,5 +1,5 @@
-Summary:	obby library
-Summary(pl.UTF-8):	Biblioteka obby
+Summary:	obby library providing synchronized document buffers
+Summary(pl.UTF-8):	Biblioteka obby udostępniająca synchronizowane bufory dokumentów
 Name:		obby
 Version:	0.4.5
 Release:	1
@@ -18,10 +18,10 @@ BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-obby library.
+obby library providing synchronized document buffers.
 
 %description -l pl.UTF-8
-Biblioteka obby
+Biblioteka obby udostępniająca synchronizowane bufory dokumentów.
 
 %package devel
 Summary:	Header files for obby
@@ -69,7 +69,7 @@ aplicativos estáticos que usam obby.
 %{__automake}
 %{__autoconf}
 %configure \
-    --with-howl
+	--with-howl
 %{__make}
 
 %install
