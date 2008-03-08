@@ -13,7 +13,7 @@ BuildRequires:	automake >= 1:1.9
 BuildRequires:	avahi-devel >= 0.6
 BuildRequires:	gettext-devel >= 0.15
 BuildRequires:	libstdc++-devel
-BuildRequires:	libtool
+BuildRequires:	libtool >= 2:1.5
 BuildRequires:	net6-devel >= 1.3.3
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
