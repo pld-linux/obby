@@ -2,7 +2,7 @@ Summary:	obby library providing synchronized document buffers
 Summary(pl.UTF-8):	Biblioteka obby udostępniająca synchronizowane bufory dokumentów
 Name:		obby
 Version:	0.4.7
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Libraries
 Source0:	http://releases.0x539.de/obby/%{name}-%{version}.tar.gz
@@ -79,6 +79,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
+
 %find_lang %{name}
 
 %clean
@@ -96,7 +98,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libobby.so
-%{_libdir}/libobby.la
 %{_includedir}/%{name}
 %{_pkgconfigdir}/obby-0.4.pc
 
