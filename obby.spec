@@ -1,12 +1,12 @@
 Summary:	obby library providing synchronized document buffers
 Summary(pl.UTF-8):	Biblioteka obby udostępniająca synchronizowane bufory dokumentów
 Name:		obby
-Version:	0.4.7
-Release:	2
+Version:	0.4.8
+Release:	1
 License:	GPL v2+
 Group:		Libraries
 Source0:	http://releases.0x539.de/obby/%{name}-%{version}.tar.gz
-# Source0-md5:	33fac4228c1efc1a1635bacf6480dc31
+# Source0-md5:	5d4cd4e77f87b092e5ed21b104d8ad33
 URL:		http://gobby.0x539.de/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
@@ -98,7 +98,7 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libobby.so
-%{_includedir}/%{name}
+%{_includedir}/obby
 %{_pkgconfigdir}/obby-0.4.pc
 
 %files static
