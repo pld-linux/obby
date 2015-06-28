@@ -2,7 +2,7 @@ Summary:	obby library providing synchronized document buffers
 Summary(pl.UTF-8):	Biblioteka obby udostępniająca synchronizowane bufory dokumentów
 Name:		obby
 Version:	0.4.8
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Libraries
 Source0:	http://releases.0x539.de/obby/%{name}-%{version}.tar.gz
@@ -14,7 +14,7 @@ BuildRequires:	avahi-devel >= 0.6
 BuildRequires:	gettext-tools >= 0.15
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool >= 2:1.5
-BuildRequires:	net6-devel >= 1.3.3
+BuildRequires:	net6-devel >= 1.3.14-2
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,7 +31,7 @@ Summary(pt_BR.UTF-8):	Arquivos do pacote obby para desenvolvimento
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	avahi-devel >= 0.6
-Requires:	net6-devel >= 1.3.3
+Requires:	net6-devel >= 1.3.14-2
 
 %description devel
 Header files for obby.
